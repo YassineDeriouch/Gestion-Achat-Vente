@@ -2,7 +2,7 @@
 EN: </br>
 Sales and purchases management desktop application with modern flat GUI.</br>
 Contains 2 main parts: </br>
-    Adminitrator management panel where he can manage products, suppliers, customers and orders.</br>
+    Administrator management panel where he can manage products, suppliers, customers and orders.</br>
     Customer panel where he can see and order available products, and display his orders history.</br></br>
 FR:</br>
 Application desktop de gestion d'achat et vente des produits, composée de :</br>
