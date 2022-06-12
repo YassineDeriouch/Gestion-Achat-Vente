@@ -23,4 +23,4 @@ Espace client : Visualiser et commander un ou plusieurs produits, voir la liste 
 - pichon for icons
 
                                                
-                                                               made with love & java 
+                                                    made with love & java 
