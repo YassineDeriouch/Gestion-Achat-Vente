@@ -22,6 +22,6 @@ Espace client : Visualiser et commander un ou plusieurs produits, voir la liste 
 - XAMPP + phpMyAdmin </br>
 - pichon for icons
 
-made by : Yassine-Derouich, Youssef-Bouichenade
+made by : [YassineDeriouch], [Youssef Bouichenade]
                                                
                                                    made with love & java 
