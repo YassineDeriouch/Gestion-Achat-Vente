@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : dim. 12 juin 2022 à 07:24
--- Version du serveur : 10.4.21-MariaDB
--- Version de PHP : 7.4.25
+-- Généré le : sam. 16 déc. 2023 à 21:30
+-- Version du serveur : 10.4.27-MariaDB
+-- Version de PHP : 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -31,14 +31,14 @@ CREATE TABLE `admin` (
   `idAdmin` int(11) NOT NULL,
   `login` varchar(254) DEFAULT NULL,
   `password` varchar(254) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `admin`
 --
 
 INSERT INTO `admin` (`idAdmin`, `login`, `password`) VALUES
-(1, 'yass', 'der');
+(1, 'admin', 'admin');
 
 -- --------------------------------------------------------
 
@@ -49,7 +49,7 @@ INSERT INTO `admin` (`idAdmin`, `login`, `password`) VALUES
 CREATE TABLE `association1` (
   `idFournisseur` int(11) NOT NULL,
   `idProd` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -61,14 +61,14 @@ CREATE TABLE `client` (
   `idClient` int(11) NOT NULL,
   `login` varchar(254) DEFAULT NULL,
   `password` varchar(254) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `client`
 --
 
 INSERT INTO `client` (`idClient`, `login`, `password`) VALUES
-(58, 'amine', 'biaz');
+(58, 'client', 'client');
 
 -- --------------------------------------------------------
 
@@ -85,7 +85,7 @@ CREATE TABLE `commande` (
   `quantitteProdCommande` int(11) DEFAULT NULL,
   `nomClient` varchar(254) DEFAULT NULL,
   `prixTotal` decimal(8,0) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `commande`
@@ -105,15 +105,15 @@ CREATE TABLE `fournisseur` (
   `nomFournisseur` varchar(254) DEFAULT NULL,
   `prenomFournisseur` varchar(254) DEFAULT NULL,
   `typeProd` varchar(254) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `fournisseur`
 --
 
 INSERT INTO `fournisseur` (`idFournisseur`, `nomFournisseur`, `prenomFournisseur`, `typeProd`) VALUES
-(5, 'test', 'testtest1', 'Bureau'),
-(6, ' Bouichenade', ' youssef', 'TV ');
+(5, 'fournisseur', 'fournisseur', 'Bureau'),
+(6, 'fournisseur2', 'fournisseur2', 'TV ');
 
 -- --------------------------------------------------------
 
@@ -129,7 +129,7 @@ CREATE TABLE `produit` (
   `dateEntre` date DEFAULT NULL,
   `dateExp` date DEFAULT NULL,
   `description` varchar(254) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `produit`
