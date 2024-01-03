@@ -1,6 +1,6 @@
 # Gestion-Achat-Vente
 EN: </br>
-Sales and purchases management desktop application with modern flat GUI.</br>
+E-commerce store desktop application with modern flat GUI.</br>
 Contains 2 main parts: </br>
     Administrator management panel where he can manage products, suppliers, customers and orders.</br>
     Customer panel where he can see and order available products, and display his orders history.</br></br>
